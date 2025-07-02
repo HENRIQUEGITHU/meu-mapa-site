@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Edu+SA+Hand:wght@400..700&display=swap');
+
+
+
+* { padding: 0px;
+    margin: 0px;
+    font-family: "DM Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+      body, html {
+  overflow-x: hidden; /* garante que não tenha rolagem lateral*/
+}
+}
+
+  :root{ 
+    --cor-de-fundo: #f0f4f8;
+    --cor-de-texto:#1a202c;
+    --cor-primaria:#4299e1;
+    --cor-segundario:#2b6cb0;  
+    --cor-auxiliar: #ed8936;
+
+  }
+    
+  .backgroude{ 
+    background-color: aquamarine;
+
+  }
+  header{
+    background: var(--cor-de-fundo);
+    position:relative;
+    box-shadow: 0 4px 6px rgb( 0, 0, 0, 0.1);
+    display: flex;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+    color: #ffffff;
+    position: fixed;
+    
+
+  }
+
+  .mover-logo{
+    display: flex;
+    padding: 3px;
+    margin: 3px;
+   
+  }
+
+
+ .logo-a{
+    
+    gap: 3px;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    border: 3px  solid;
+     color: darkgreen; 
+     border-radius: 50%;
+     background: transparent;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+
+ }
+   
+
+ .topo {
+    display: flex;
+    padding: 1rem;
+    
+    
+
+   }
+   ul{
+    display: flex;
+
+   }
+   
+   
+
+   li a {
+    
+     margin-left: 2rem;
+     color: var(--cor-primaria);
+     
+    
+   }
+
+   li :hover {
+        color: yellow;
+        transition: 0,4s all;
+        
+        }
+
+
+  
+    button:hover {
+        color: #04fa6b; 
+         transition: 0,3s all;
+         background: #2ecc71;
+         color: #ffffff;
+}
+
+  button{ 
+    /* From Uiverse.io by gharsh11032000 */ 
+ font-family: sans-serif;
+ background-color:darkolivegreen;
+  display: flex;
+  padding: 10px 20px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: whitesmoke;
+  box-shadow: 0 0 0 2p transparent;
+  cursor: pointer;
+  
+}
+   
+main{
+    margin-top: 5rem;
+
+}
+ 
+
+@media (max-width: 768px) {
+  .dev {
+    grid-template-columns: 1fr; /* colunas empilhadas */
+    text-align: center;
+    padding: 1rem;
+  }
+  .dev-texto {
+    padding: 0 1rem;
+  }
+  .imagem-perfil {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+}
+
+/* Imagem responsiva do perfil */
+.imagem-perfil {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto ;
+  display: grid;
+}
+
+
+.card-skills{
+  background-color: var(--cor-de-fundo);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+   transition: transform 0.3s ease;
+
+}
+
+.card-skills :hover {
+ transform: translateY(-5px);
+ cursor: pointer;
+ 
+}
+    .secao-skills{
+       display: grid;
+      grid-template-columns:  repeat(auto, minmax(400px, 1fr));
+      gap: 2rem;
+       
+    }
+
+
+
+
+
+      /*projetos*/.s
+.secao-proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.projeto-card {
+  background-color: var(--cor-de-fundo);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.projeto-card:hover {
+  transform: translateY(-5px);
+}
+
+
+ section{
+    padding:4rem;
+
+ }
+ .dev {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+
+ }
+ .dev-texto h1 {
+    font-size: 3rem;
+    color: darkolivegreen;
+    margin-bottom: 0.5rem;
+
+ }
+
+ .dev-texto p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    
+ }
+
+ .baton{
+    display: flex;
+    padding-top: 2rem;
+
+ }
+
+  #elii{
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+
+  }
+
+  #eli{ 
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    padding: auto;
+
+
+  }
+
+  #h3-soft{  
+    display: flex;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+
+  }
+
+ .secao-proj-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    gap: 2rem;
+     
+ }
+
+ h2{
+    color: darkolivegreen;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    font-size: 2,5rem; /* equivale a 40px*/
+ }
+    h3{
+        font-size: 1.25rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkolivegreen;
+        padding: 2px;
+        display: flex;
+        justify-items: center;
+        padding: 3px;
+
+    }
+
+
+.projeto-card{
+    box-shadow: 0 4px 6px rgb( 0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: var(--cor-de-fundo);
+    padding: 1.5rem;
+
+ }
+
+   
+    
+
+    .projeto-tags{
+        display: flex;
+        margin-top: 1rem;
+        flex-wrap: wrap; /*para não fazer quebra de linha */;
+
+
+    }
+
+    .projeto-tags span {
+        background-color: #ed8936;
+        border-radius: 50%;
+        padding: 0.25rem 0.5rem;
+        color: #f0f4f8;
+        font-size: 0.75rem;
+        border-radius: 20px;
+        display: flex;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    #projetos{ /* # para selecionar id */
+
+        
+    }
+
+    
+ .titulo-contato{
+    padding: 0px;
+     margin: 0px;
+
+ }
+
+    
+       
+    .contato{
+        background-color: aquamarine;
+        color: #ffffff;
+
+    }
+
+    .contato-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+    
+   
+    .grupo-formulario{
+        margin-bottom: 1.5rem;
+
+    }
+
+    label{
+        margin-bottom: 0.5rem;
+        display: block;
+        color:darkolivegreen;
+        font-family: sans-serif;
+        font-size: 20px;
+
+
+    }
+
+    input, textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+    
+
+    footer{
+        background-color: var(--cor-de-fundo);
+        padding: 1rem;
+        text-align: center
+
+
+
+    }
+    .icone-footer{
+        display:flex ;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 1rem;
+
+
+    }
+
+    @keyframes fade {
+        From { opacity: 0 ;  transform: translateY(20px);}
+        to{ opacity: 1; transform: translateY(0);}
+
+
+
+    }
+
+    .fade-in{
+        animation: fade 1s ease-out;
+    }
+
+    /* Estilo do botão "voltar ao topo" */
+#topo-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#topo-btn:hover {
+  background-color: #555;
+}
+
+/* Menu hamburguer responsivo */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+ 
+  
+
+
